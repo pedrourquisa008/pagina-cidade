@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rio branco</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #f9f7f7 , rgb(76, 85, 255), #192bf8);
+            background-size: cover;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #21a6da;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(69, 0, 244, 0.51);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .caption {
+            font-style: italic;
+            color: #555;
+            margin-top: 10px;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button-container button {
+            background-color: #170089;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .button-container button:hover {
+            background-color: #0056b3;
+        }
+        .button-container button:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1></h1>
+        <h2 style="text-align: justify;">O Acre está situado no sudoeste da região Norte e tem como limites os estados do Amazonas e Rondônia e os países Bolívia e Peru. O nome Acre surgiu de “Aquiri”, que significa “rio dos jacarés” na língua nativa dos índios Apurinãs, os habitantes originais da região, que é banhada pelo rio que empresta o nome ao estado.
+ 
+        </h2>
+        <p>Explore algumas imagens da cidade de Rio Branco. Clique nos botões abaixo para ver varias imagens e descobrir mais sobre os pontos turísticos e a beleza de Rio Branco.</p>
+        <img id="Rio Branco-imagem" src="Rio-Acre_Mastro-Bandeira.-Odair-Leal_SECOM-9-1.jpg" alt="Estado do Acre na cidade de Rio Branco" />
+        <div id="caption" class="caption">Estado do Acre na cidade de Rio Branco</div>
+        <div class="button-container">
+            <button onclick="changeImage('imagem1.jpg', 'Estado do Acre de dia')">1</button>
+            <button onclick="changeImage('imagem2.jpg', 'Rio Branco visto de cima')">2</button>
+            <button onclick="changeImage('imagem3.jpg', 'Palácio de Rio Branco')">3</button>
+            <button onclick="changeImage('imagem5.jpg', 'Bosque de Rio Branco')">4</button>
+        </div>
+    </div>
+ 
+    <script>
+        function changeImage(src, captionText) {
+            document.getElementById('Rio Branco-imagem').src = src;
+            document.getElementById('Rio Branco-imagem').alt = captionText;
+            document.getElementById('caption').textContent = captionText;
+        }
+    </script>
+</body>
+</html>
